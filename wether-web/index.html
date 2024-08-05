@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Enter city name">
+                <button class="search-btn"><i class="fas fa-search"></i>Search</button>
+                <button class="location-btn"><i class="fas fa-map-marker-alt"></i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA0ZJREFUSEvllk1oHVUUx/8nc9+LJDFz56Vx4cYEUZB2oVTtymiwuOimqS6UZKEWmwayiP0AwY1xVSgJLVSUaGmz0aJoJQs3QjBpNy0iiaAN0kVDWxMUkrnzFiXJezN/O5NbeQl58yYPIVBnNcO9c37n+xzBDj2yQ1zUBabvd5SBd2KlFTAunje/XQPqApd8/xUR+SmGkezOed7UwwcmmQ+LxVdBHgJwEMBj1sq/AUxQ5LJqbZ0UkVIW6zO5es33n2sQ+Q5AZw2htyLyjbznzdSC1wSHQTBI8gyAnBVmAMyC/D35FtkD4FkArj1fE+B9R+vP0uCpYAv9xAIWQA4prb/dSmA5CN4CeQ7ArnV9ZNBx3U+rwauCV5eWdjuO8wuARpI3VD6/X5qbF9OsoDGdITBpQ7IShuHzjW1t657Z9GwJ5sJCU7mpaVaApwDccZR6QVpa/or/LS8v96Kh4SiAfVbWdUTRmCoUvkrKy/c7QpGfY8sThbXeKyIrmcBl338bIuPJZbJHed5E/BoaM0LgRBULRh2tT9p7/QTGbIh6leteygY25gKAd0EuKs97vMLSL1OzNYr6YstJNoZBsASgGcCY0nqgKti2wQ6bGBcBxO9fKK37E7Ax0wC6UsHAFaX1y/b+DwAOELgJMpGhgPkH7fXfGJd8f1hEPqoUTOBUTusPraA4To01wKtK60fiO6UgOCvk0AZ55Mc5zxtOjHtwUAU8mrNxKxuzXfCokMdrgitdDZHPbUZ/o7R+s05Xx53udQJ/gExivKWrKzUrGTMi69kbOK7r3Q8BbRllTS4nDIJlAK0ETue0/iBTVleOPYj0KddNajRrOZWNeS9OzKQao6grVyhczQQmKWGxOA3yJQB/OqXSi9LevlBRVtUbiDFPhsA12zqnlNbdVep+6zy17W8uaZnAnArD16St7W5aVrNYfDqMoh8BPAHgnhNFz0ihcHtbYOvaAQLrU4ZchMgxpfXXmwUlHgqCwwBOAyjY8yNK6/PVFK13LM6A/A0iOYjsBhmPxUctpCwiQ2mTaUMdp7lwG4vAfET25D3v1xqNJvuWmbL6xFMrXn2+/89Xn83a/z+2zA09d6cW+lqJk+W8ZjllEVLPnX8AlxOdLtd7euMAAAAASUVORK5CYII="/></button>
+            </div>
+        </header>
+        <main>
+            <section class="current-weather">
+                <div class="weather-info">
+                    <h2 class="location">Location</h2>
+                    <div class="weather-details">
+                        <img src="" alt="Weather condition" class="weather-icon">
+                        <div class="temperature">--°C</div>
+                        <div class="condition">----</div>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <div class="info-item">
+                        <i class="fas fa-tint"></i>
+                        <span class="humidity">Humidity: --%</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-wind"></i>
+                        <span class="wind-speed">Wind: -- km/h</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-temperature-low"></i>
+                        <span class="feels-like">Feels like: --°C</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-sun"></i>
+                        <span class="uv-index">UV Index: --</span>
+                    </div>
+                </div>
+            </section>
+            <section class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div class="forecast-container"></div>
+            </section>
+        </main>
+        <div class="error-message"></div>
+    </div>
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
